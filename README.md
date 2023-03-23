@@ -59,8 +59,26 @@ data_dict = {
 data = pandas.DataFrame(data_dict)
 data.to_csv("new_data.csv")
 ```
-
 ![new_data](https://user-images.githubusercontent.com/87909401/216723527-788a24c6-6385-44e1-8ab3-d0eba5063ed8.png)
+
+## Create a data frame from a csv file
+```python
+data = pandas.read_csv("Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+
+gray_squirrels_count = len(data[data["Primary Fur Color"] == "Gray"])
+cinnamon_squirrels_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
+black_squirrels_count = len(data[data["Primary Fur Color"] == "Black"])
+
+data_dict = {
+    "Fur Color": ["Gray", "Cinnamon", "Black"],
+    "Count": [gray_squirrels_count, cinnamon_squirrels_count, black_squirrels_count]
+}
+
+df = pandas.DataFrame(data_dict)
+df.to_csv("squirrels_count")
+```
+![squirrels_count](https://user-images.githubusercontent.com/87909401/227150314-b3f1b58d-a919-4146-931c-2eec075d66ef.png)
+
 
 
 ## 🔗 Links
