@@ -50,7 +50,7 @@ monday_temp_F = (monday_temp * 9/5) + 32
 print(monday_temp_F)
 ```
 
-## Create a datafram from scratch
+## Create a DataFrame from scratch
 ```python
 data_dict = {
     "students": ["Amy", "James", "Angela"],
@@ -61,7 +61,7 @@ data.to_csv("new_data.csv")
 ```
 ![new_data](https://user-images.githubusercontent.com/87909401/216723527-788a24c6-6385-44e1-8ab3-d0eba5063ed8.png)
 
-## Create a data frame from a csv file
+## Create a DataFrame from a csv file
 ```python
 data = pandas.read_csv("Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
 
@@ -77,7 +77,8 @@ data_dict = {
 df = pandas.DataFrame(data_dict)
 df.to_csv("squirrels_count")
 ```
-![squirrels_count](https://user-images.githubusercontent.com/87909401/227150314-b3f1b58d-a919-4146-931c-2eec075d66ef.png)
+![squirrels_count](https://user-images.githubusercontent.com/87909401/227153050-a4989dd5-fc75-4719-97cf-aa904a6839b8.png)
+
 
 
 
